@@ -1,3 +1,2 @@
 #忽略掉所有node_modules目录下的文件
-src/static/node_modules/ 
-
+src/static/node_modules/
