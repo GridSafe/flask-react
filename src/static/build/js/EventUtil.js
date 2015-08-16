@@ -1,0 +1,1 @@
+var EventUtil={addHandle:function(e,n,t){e.addEventListener?e.addEventListener(n,t,!1):e.attachEvent?e.attachEvent("on"+n,t):e["on"+n]=t},removeHandle:function(e,n,t){e.removeEventListener?e.removeEventListener(n,t,!1):e.dettachEvent?e.dettachEvent("on"+n,t):e["on"+n]=null},getEvent:function(e){return e||window.event}};
