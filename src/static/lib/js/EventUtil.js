@@ -19,5 +19,24 @@ var EventUtil = {
     },
     getEvent: function(event){
         return event || window.event;
+    },
+
+    getTarget: function(event){
+        return event.target || event.srcElement;
+    },
+
+    preventDefault: function(event){
+        if(event.preventDefault){
+            event.preventDefault();
+        }else{
+            event.returnValue = true;
+        }
+    },
+    stopPropagation: function(event){
+        if(event.stopProppagation){
+            event.stopPropagation();
+        }else{
+            event.cancelBubble = true;
+        }
     }
 }
