@@ -5,6 +5,7 @@ var watchPath = require('gulp-watch-path');
 var jshint = require('gulp-jshint');
 var soucemaps = require('gulp-sourcemaps');
 var combiner = require('stream-combiner2');
+var rename = require('gulp-rename');
 
 /*捕捉错误*/
 var handleError = function(error){
@@ -39,3 +40,6 @@ gulp.task('watchjs',function(){
 });
 
 gulp.task('default',['watchjs']);
+
+
+

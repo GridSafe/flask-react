@@ -1,1 +1,0 @@
-var http=require("http");http.createServer(function(e,t){t.writeHead(200,{"Content-Type":"text/plain"}),t.write("Hello world"),t.end()}).listen(3e3),console.log("Server has started");
